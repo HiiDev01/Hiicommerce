@@ -39,3 +39,11 @@ document.getElementById("close-search").addEventListener("click", ()=>{
     toTop.style.opacity = "0";
   }
  });
+ //price rang
+ const rangeInput = document.querySelector(".rangeInput");
+ const rangrPrice = document.querySelector(".rangrPrice");
+ rangeInput.oninput = (()=>{
+  let rangeValue = rangeInput.value;
+  rangrPrice.textContent = rangeValue;
+  rangrPrice.style.left = (rangeValue/2) + "%";
+ })
