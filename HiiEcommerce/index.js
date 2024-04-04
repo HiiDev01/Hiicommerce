@@ -51,13 +51,13 @@ function nextSlide(){
     goToSlide(0);
   }
 }
- function prevSlide(){
+function prevSlide(){
   if(currentIndex > 0){
     goToSlide(currentIndex - 1);
   }else{
     goToSlide(totalSlide - 1);
   }
- }
+}
  
  let autoplayInterval;
 
@@ -109,3 +109,25 @@ function nextSlide(){
     toTop.style.opacity = "0";
   }
  });
+
+ //adding item to cart and saving them to local storage
+ document.addEventListener('DOMContentLoaded',function(){
+  const addToCartButtons = document.querySelectorAll(".add-to-cart");
+
+  addToCartButtons.forEach(cartButtons =>{
+    cartButtons.addEventListener('click', function(){
+      const cartItemContainer = cartButtons.closest(".shop-product");
+      const imageSrc = cartItemContainer.querySelector('img').src;
+      const itemName = cartItemContainer.querySelector('h2').textContent;
+      const itemPrice = cartItemContainer.querySelector('.price').textContent;
+
+      const ItemCarted = {
+        cartedImg: imageSrc,
+        cartedName: itemName,
+        cartedPrice: itemPrice
+      }
+      localStorage.setItem('itemCarted',JSON.stringify(ItemCarted));
+      console.log(localStorage);
+    });
+  });
+});

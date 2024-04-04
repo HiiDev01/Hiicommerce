@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+  <title>Document</title>
+  <link rel="stylesheet" href="shopdetails.css">
+  <script src="https://kit.fontawesome.com/f96071fac1.js" crossorigin="anonymous"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="to-top">
+    <a href="#"><i class="fa-solid fa-arrow-up"></i></a>
+  </div>
+  <header>
+    <div class="header-info-con">
+      <div class="header-info">
+        <p><span><i class="fa-solid fa-location-dot"></i></span> 123 Lagos island</p>
+        <p><span><i class="fa-regular fa-envelope"></i></span> Email@example.com</p>
+      </div>
+
+      <div class="header-Ul">
+        <ul>
+          <li><a href="#">privacy policy</a></li>/
+          <li><a href="#">terms of use</a></li>/
+          <li><a href="#">sales and refund</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <nav>
+      <div class="logo">
+        <h1>Hiiganic</h1>
+      </div>
+      <div class="min-nav">
+        <ul>
+          <li><a href="index.html" class="closeNav activePage">home</a></li>
+          <li><a href="shop.html" class="closeNav">shop</a></li>
+          <li><a href="shopdetails.html" class="closeNav">shop details</a></li>
+          <li><a href="#" class="">pages </a><span><i class="fa-solid fa-angle-down"></i></span>
+            <ul>
+              <li><a href="#" class="closeNav">cart</a></li>
+              <li><a href="#" class="closeNav">checkout</a></li>
+              <li><a href="#" class="closeNav">testimonial</a></li>
+              <li><a href="#" class="closeNav">404 page</a></li>
+            </ul>
+          </li>
+          <li><a href="#" class="closeNav">contact</a></li>
+        </ul>
+        <div class="nav-btn-con">
+          <di class="nav-btn-div" id="search-btn">
+            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+          </di>
+          <di class="nav-btn-div">
+            <button>
+              <i class="fa-solid fa-bag-shopping"></i>
+              <span>3</span>
+            </button>
+          </di>
+          <di class="nav-btn-div">
+            <button><i class="fa-solid fa-user"></i></button>
+          </di>
+        </div>
+      </div>
+      <div class="hamburger">
+        <div class="burger-bar"></div>
+        <div class="burger-bar"></div>
+        <div class="burger-bar"></div>
+      </div>
+      
+    </nav>
+    <div class="search-Con" id="search-Con">
+      <div class="search-con-head">
+        <h2>Search by Keyword</h2>
+        <button id="close-search"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <div class="seach-bar-con">
+        <input type="search" name="searchKey" id="searchKey" placeholder="Keywords">
+        <button><i class="fa-solid fa-magnifying-glass"></i></button>
+      </div>
+    </div>
+  </header>
+  <div class="home">
+    <div class="home-details-container">
+      <h1>shoppinng details</h1>
+      <ul>
+        <li><a href="#">home</a> /</li>
+        <li><a href="#">pages</a> /</li>
+        <li>shop</li>
+      </ul>
+    </div>
+  </div>
+
+  <main>
+    <div class="main-item-conatiner">
+      <div class="main-item-wrapper main-item-one-wrapper">
+        <div class="items-container">
+          <img src="images/broccoli.jpeg" alt="illus">
+          <div class="item-details">
+            <h3>broccoli</h3>
+            <p class="item-category">category: vegetable</p>
+            <h4 class="price-item"><span>&#x24;</span>3.20</h4>
+            <div class="rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="item-para-one">
+              Broccoli, a cruciferous vegetable renowned for its vibrant green hue and
+               distinctive appearance, holds a cherished place in the world of nutrition
+            </p>
+            <p class="item-para-two">
+              Beyond its nutritional value, broccoli boasts a versatile culinary profile
+               that lends itself to a myriad of dishes, from simple stir-fries to elaborate
+            </p>
+            <div class="number-to-buy">
+              <button class="dec-number">-</button>
+              <span class="numberShopped">1</span>
+              <button class="inc-number">+</button>
+            </div>
+            <button class="add-to-cart">Add to cart</button>
+          </div>
+        </div>
+
+        <div class="item-description-review">
+          <div class="item-descriptiom-header">
+            <button class="description-btn des-active" onclick="showDescription(0)">description</button>
+            <button class="description-btn" onclick="showDescription(1)">reveiw</button>
+          </div>
+          <div class="description-reveiw-wrapper">
+            <div class="description-item active description">
+              <p class="description-p-one">Whether as a vibrant side dish or a prominent ingredient in a 
+                hearty main course, broccoli's versatility and nutritional richness 
+                make it a beloved vegetable cherished by chefs
+              </p>
+              <p class="description-p-two">
+                broccoli contains potent antioxidants like sulforaphane, known for its
+                 anti-inflammatory properties and potential cancer-fighting abilities,
+                  making it a staple in health-conscious.
+              </p>
+
+              <div class="description-table">
+                <div class="desscription-table-item">
+                  <p>weight</p>
+                  <p>1kg</p>
+                </div>
+                <div class="desscription-table-item">
+                  <p> origin</p>
+                  <p>Hiiganic farm</p>
+                </div>
+                <div class="desscription-table-item">
+                  <p>quality</p>
+                  <p>oragnic</p>
+                </div>
+                <div class="desscription-table-item">
+                  <p>check</p>
+                  <p>healthy</p>
+                </div>
+                <div class="desscription-table-item">
+                  <p>min weight</p>
+                  <p>250kg</p>
+                </div>
+
+              </div>
+            </div>
+            <div class="description-item reveiw">
+              <ul>
+                <li>
+                  <div class="reveiw-section">
+                    <img src="images/rew-user.png" alt="illus">
+                    <div class="review-details">
+                      <p class="reveiw-date">june 12, 2024</p>
+                      <div class="reveiw-name">
+                        <h2>hisaac brown</h2>
+                        <div class="rating">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                      </div>
+                      <p class="reveiw-words">
+                        I was pleasantly surprised by the broccoli from this farm. 
+                        The broccoli was fresh, vibrant, and bursting with flavor.
+                        I particularly appreciated how tender and crisp.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="reveiw-section">
+                    <img src="images/rew-user.png" alt="illus">
+                    <div class="review-details">
+                      <p class="reveiw-date">june 12, 2024</p>
+                      <div class="reveiw-name">
+                        <h2>hisaac brown</h2>
+                        <div class="rating">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                      </div>
+                      <p class="reveiw-words">
+                        I was pleasantly surprised by the broccoli from this farm. 
+                        The broccoli was fresh, vibrant, and bursting with flavor.
+                        I particularly appreciated how tender and crisp.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="post-a-comment-blog">
+          <div class="post-a-comment-blog-header">
+            <h2>Leave a Comment</h2>
+            <form action="">
+              <div>
+                <input type="text" name="commenterName" id="commenterName" placeholder="your name *" required>
+                <input type="email" name="commenterEmail" id="commenterEmail" placeholder="your email *" required>
+              </div>
+              <textarea name="commenterMessage" id="commenterMessage" cols="30" rows="10"></textarea>
+              <div class="form-submit-btn-con">
+                <button type="submit">post comment</button>
+
+              </div>
+            </form>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="main-item-wrapper main-item-two-wrapper">
+        <div class="shop-filter shopSearch-con">
+          <input type="text" name="shopSearch" id="shopSearch" placeholder="Keywords">
+          <button><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+
+        <div class="main-item-wrapper-one">
+
+          <div class="main-item-one-header">
+            <h2>categories</h2>
+          </div>
+  
+          <ul>
+            <li><a href="#"><span class="cate-icon"><i class="fa-solid fa-leaf"></i></span>all foods</a> <span class="categories-numb">(20)</span></li>
+            <li><a href="#"><span class="cate-icon"><i class="fa-solid fa-apple-whole"></i></span>apple</a> <span class="categories-numb">(4)</span></li>
+            <li><a href="#"><span class="cate-icon"><i class="fa-solid fa-lemon"></i></span>lemon</a> <span class="categories-numb">(3)</span></li>
+            <li><a href="#"><span class="cate-icon"><i class="fa-solid fa-pepper-hot"></i></span>spicy</a> <span class="categories-numb">(5)</span></li>
+            <li><a href="#"><span class="cate-icon"><i class="fa-solid fa-seedling"></i></span>vegetable</a> <span class="categories-numb">(6)</span></li>
+          </ul>
+  
+
+  
+          
+  
+          <div class="featured-products-conatiner">
+            <h2>featured products</h2>
+            <ul>
+              <li>
+                <div class="featured-item">
+                  <img src="images/basket-apple.png" alt="illus">
+                  <div class="featured-details">
+                    <h3>apple</h3>
+                    <div class="rating">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="featured-price-con">
+                      <p> &#x24;<span class="featured-price">2.55</span></p>
+                      <del>&#x24;<span class="featured-price">2.55</span></del>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="featured-item">
+                  <img src="images/single-strwberry.jpg" alt="illus">
+                  <div class="featured-details">
+                    <h3>strawberry</h3>
+                    <div class="rating">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="featured-price-con">
+                      <p> &#x24;<span class="featured-price">2.55</span></p>
+                      <del>&#x24;<span class="featured-price">2.55</span></del>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="featured-item">
+                  <img src="images/broccoli.jpeg" alt="illus">
+                  <div class="featured-details">
+                    <h3>broccoli</h3>
+                    <div class="rating">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="featured-price-con">
+                      <p> &#x24;<span class="featured-price">2.55</span></p>
+                      <del>&#x24;<span class="featured-price">2.55</span></del>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="featured-item">
+                  <img src="images/bell-pepper.png" alt="illus">
+                  <div class="featured-details">
+                    <h3>bell pepper</h3>
+                    <div class="rating">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="featured-price-con">
+                      <p> &#x24;<span class="featured-price">2.55</span></p>
+                      <del>&#x24;<span class="featured-price">2.55</span></del>
+                    </div>
+                  </div>
+                </div>
+              </li>
+  
+              <li>
+                <button>view more</button>
+              </li>
+            </ul>
+          </div>
+          <div class="fresh-food-banner">
+            <img src="images/banner.jpg" alt="illus">
+          </div>
+  
+        </div>
+
+
+
+
+
+      </div>
+    </div>
+
+
+    <!---------------------------------------------------------------------->
+
+    <div class="vegetables-food-container">
+      <div class="vegetables-food-header">
+        <h2>related products</h2>
+        <div class="vegetables-food-control">
+          <button class="vegetables-control"><i class="fa-solid fa-arrow-right-long"></i></button>
+          <button class="vegetables-control"><i class="fa-solid fa-arrow-left-long"></i></button>
+        </div>
+      </div>
+
+      <div class="vegetables-item-container">
+
+        <div class="vegetables-item">
+          <div class="filter-vegetable-img-con">
+            <img src="images/Parsley.png" alt="illus">
+          </div>
+          <h3>vegetables</h3>
+          <div class="vegetable-details-con">
+            <h2>Parsley</h2>
+            <p>provide potassium, essential to heart function, and proven to lower blood pressure
+              omega-3 fatty acids prevent strokes 
+            </p>
+            <div class="cart">
+              <p class="price"><span>&#x24;</span>4.99/kg</p>
+              <button class="add-to-cart">
+              <span><i class="fa-solid fa-bag-shopping"></i></span>Add to cart
+            </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="vegetables-item">
+          <div class="filter-vegetable-img-con">
+            <img src="images/dill.png" alt="illus">
+          </div>
+          <h3>vegetables</h3>
+          <div class="vegetable-details-con">
+            <h2>Dill vegetables</h2>
+            <p>provide potassium, essential to heart function, and proven to lower blood pressure
+              omega-3 fatty acids prevent strokes 
+            </p>
+            <div class="cart">
+              <p class="price"><span>&#x24;</span>4.99/kg</p>
+              <button class="add-to-cart">
+              <span><i class="fa-solid fa-bag-shopping"></i></span>Add to cart
+            </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="vegetables-item">
+          <div class="filter-vegetable-img-con">
+            <img src="images/argula.png" alt="illus">
+          </div>
+          <h3>vegetables</h3>
+          <div class="vegetable-details-con">
+            <h2>argula vegetable</h2>
+            <p>provide potassium, essential to heart function, and proven to lower blood pressure
+              omega-3 fatty acids prevent strokes 
+            </p>
+            <div class="cart">
+              <p class="price"><span>&#x24;</span>4.99/kg</p>
+              <button class="add-to-cart">
+              <span><i class="fa-solid fa-bag-shopping"></i></span>Add to cart
+            </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="vegetables-item">
+          <div class="filter-vegetable-img-con">
+            <img src="images/basil.png" alt="illus">
+          </div>
+          <h3>vegetables</h3>
+          <div class="vegetable-details-con">
+            <h2>basil vegetable</h2>
+            <p>provide potassium, essential to heart function, and proven to lower blood pressure
+              omega-3 fatty acids prevent strokes 
+            </p>
+            <div class="cart">
+              <p class="price"><span>&#x24;</span>4.99/kg</p>
+              <button class="add-to-cart">
+              <span><i class="fa-solid fa-bag-shopping"></i></span>Add to cart
+            </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="vegetables-item">
+          <div class="filter-vegetable-img-con">
+            <img src="images/mint.png" alt="illus">
+          </div>
+          <h3>vegetables</h3>
+          <div class="vegetable-details-con">
+            <h2>mint vegetable</h2>
+            <p>provide potassium, essential to heart function, and proven to lower blood pressure
+              omega-3 fatty acids prevent strokes 
+            </p>
+            <div class="cart">
+              <p class="price"><span>&#x24;</span>4.99/kg</p>
+              <button class="add-to-cart">
+              <span><i class="fa-solid fa-bag-shopping"></i></span>Add to cart
+            </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="vegetables-item">
+          <div class="filter-vegetable-img-con">
+            <img src="images/tomato.jpg" alt="illus">
+          </div>
+          <h3>vegetables</h3>
+          <div class="vegetable-details-con">
+            <h2>tomato</h2>
+            <p>provide potassium, essential to heart function, and proven to lower blood pressure
+              omega-3 fatty acids prevent strokes 
+            </p>
+            <div class="cart">
+              <p class="price"><span>&#x24;</span>4.99/kg</p>
+              <button class="add-to-cart">
+              <span><i class="fa-solid fa-bag-shopping"></i></span>Add to cart
+            </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="vegetables-item">
+          <div class="filter-vegetable-img-con">
+            <img src="images/potatoes.jpg" alt="illus">
+          </div>
+          <h3>tuber</h3>
+          <div class="vegetable-details-con">
+            <h2>potatoes</h2>
+            <p>provide potassium, essential to heart function, and proven to lower blood pressure
+              omega-3 fatty acids prevent strokes 
+            </p>
+            <div class="cart">
+              <p class="price"><span>&#x24;</span>4.99/kg</p>
+              <button class="add-to-cart">
+              <span><i class="fa-solid fa-bag-shopping"></i></span>Add to cart
+            </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="vegetables-item">
+          <div class="filter-vegetable-img-con">
+            <img src="images/sunflower.png" alt="illus">
+          </div>
+          <h3>flowers</h3>
+          <div class="vegetable-details-con">
+            <h2>sunflower</h2>
+            <p>provide potassium, essential to heart function, and proven to lower blood pressure
+              omega-3 fatty acids prevent strokes 
+            </p>
+            <div class="cart">
+              <p class="price"><span>&#x24;</span>4.99/kg</p>
+              <button class="add-to-cart">
+              <span><i class="fa-solid fa-bag-shopping"></i></span>Add to cart
+            </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!--this is the end of vegetable-food-conatiner-->
+
+
+
+
+
+
+
+
+  </main>
+
+
+
+
+  <footer>
+    <div class="footer-header">
+      <div class="footer-header-one">
+        <h1>Hiiganic</h1>
+        <p>Fresh goods</p>
+      </div>
+      <div class="footer-header-two">
+        <form action="">
+          <input type="text" name="footerNewsLetters" id="footerSearch" placeholder="enter your email">
+          <button>subscribe now</button>
+        </form>
+      </div>
+      <div class="footer-header-three">
+        <a href="#"><span><i class="fa-brands fa-linkedin"></i></span></a>
+        <a href="#"><span><i class="fa-brands fa-x-twitter"></i></span></a>
+        <a href="#"><span><i class="fa-brands fa-facebook"></i></span></a>
+        <a href="#"><span><i class="fa-brands fa-youtube"></i></span></a>
+      </div>
+    </div>
+    
+    <div class="footer-details-container">
+      <div class="footer-details">
+        <h2>why people like us!</h2>
+        <p>customers apppreciate our oragnic food for its commtment to quality, substainability
+          health-conscious, offerings of fresh products to obtain a healthy living and ethical
+          consumption
+        </p>
+        <a href="#" class="read-more">read more</a>
+      </div>
+      <div class="footer-details">
+        <h2>shop info</h2>
+        <ul>
+          <li><a href="#">about us</a></li>
+          <li><a href="#">contact us</a></li>
+          <li><a href="#">privacy policy</a></li>
+          <li><a href="#">term & condition</a></li>
+          <li><a href="#">return policy</a></li>
+          <li><a href="#">FAQs & Help</a></li>
+        </ul>
+      </div>
+      <div class="footer-details">
+        <h2>shop info</h2>
+        <ul>
+          <li><a href="#">my account</a></li>
+          <li><a href="#">shop details</a></li>
+          <li><a href="#">shooping cart</a></li>
+          <li><a href="#">wishlist</a></li>
+          <li><a href="#">order history</a></li>
+          <li><a href="#">international orders</a></li>
+        </ul>
+      </div>
+      <div class="footer-details">
+        <h2>contact</h2>
+        <ul>
+          <li>Address: 123 lagos island, lagos Ng 10001</li>
+          <li>Email: Example@gmail.com</li>
+          <li>Phone: +234 000000000</li>
+          <li>Payment Accepted</li>
+          <li>
+            <img src="images/paystack.png" alt="illus">
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-copyright">
+      <p>&#169; <span class="company"><a href="">Hiiganic</a></span>, all right reserved</p>
+      <p>designed by <span class="creator"><a href="#">HiiDev</a></span></p>
+    </div>
+  </footer>
+
+
+  <script src="shopdetails.js" defer></script>
+</body>
+</html>

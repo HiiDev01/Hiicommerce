@@ -1822,7 +1822,7 @@ main{
 .best-selling-details{
   width: 100%;
 }
-.best-selling-details h3{
+.best-selling-details h2{
   font-size: 1.2rem;
   font-weight: 600;
   font-family: var(--second-font);

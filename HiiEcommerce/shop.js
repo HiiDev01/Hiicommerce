@@ -47,3 +47,61 @@ document.getElementById("close-search").addEventListener("click", ()=>{
   rangrPrice.textContent = rangeValue;
   rangrPrice.style.left = (rangeValue/2) + "%";
  })
+//pagination***************************/
+const paginationItemContainer = document.querySelector(".main-item-wrappet-two-item-container");
+const paginationButton = document.querySelectorAll(".Pages");
+const nextPagination = document.querySelector(".nextPages");
+const prevPagination = document.querySelector(".prevPages");
+const divsPerPage = 9;
+let currentPaginationPage = 1;
+
+
+function showPaginationPage(page){
+  const paginationStartIndex = (page - 1) * divsPerPage;
+  const paginationEndIndex = paginationStartIndex + divsPerPage;
+  const containerItems = paginationItemContainer.querySelectorAll(".item-filter-food");
+
+  containerItems.forEach((containerItem, index)=>{
+    if(index >= paginationStartIndex && index < paginationEndIndex){
+      containerItem.style.display = "block";
+    } else{
+      containerItem.style.display = "none";
+    }
+  });
+}
+
+function setActiveButton(page){
+  paginationButton.forEach(button =>{
+    if(parseInt(button.textContent) === page){
+      button.classList.add("activePagination");
+    }else{
+      button.classList.remove("activePagination");
+    }
+  });
+}
+
+function goToPaginationPage(page){
+  currentPaginationPage = page;
+  showPaginationPage(currentPaginationPage);
+  setActiveButton(currentPaginationPage);
+}
+
+prevPagination.addEventListener("click",()=>{
+  if(currentPaginationPage > 1){
+    goToPaginationPage(currentPaginationPage - 1);
+  }
+});
+nextPagination.addEventListener("click", ()=>{
+  if(currentPaginationPage < paginationButton.length){
+    goToPaginationPage(currentPaginationPage + 1);
+  }
+});
+
+paginationButton.forEach(button =>{
+  button.addEventListener("click", ()=>{
+    const page = parseInt(button.textContent);
+    goToPaginationPage(page);
+  });
+});
+showPaginationPage(currentPaginationPage);
+setActiveButton(currentPaginationPage);

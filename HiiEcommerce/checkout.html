@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+  <title>Hiiganic</title>
+  <link rel="stylesheet" href="checkout.css">
+  <script src="https://kit.fontawesome.com/f96071fac1.js" crossorigin="anonymous"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="to-top">
+    <a href="#"><i class="fa-solid fa-arrow-up"></i></a>
+  </div>
+  <header>
+    <div class="header-info-con">
+      <div class="header-info">
+        <p><span><i class="fa-solid fa-location-dot"></i></span> 123 Lagos island</p>
+        <p><span><i class="fa-regular fa-envelope"></i></span> Email@example.com</p>
+      </div>
+
+      <div class="header-Ul">
+        <ul>
+          <li><a href="#">privacy policy</a></li>/
+          <li><a href="#">terms of use</a></li>/
+          <li><a href="#">sales and refund</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <nav>
+      <div class="logo">
+        <h1>Hiiganic</h1>
+      </div>
+      <div class="min-nav">
+        <ul>
+          <li><a href="#" class="closeNav activePage">home</a></li>
+          <li><a href="shop.html" class="closeNav">shop</a></li>
+          <li><a href="shopdetails.html" class="closeNav">shop details</a></li>
+          <li><a href="#" class="">pages </a><span><i class="fa-solid fa-angle-down"></i></span>
+            <ul>
+              <li><a href="#" class="closeNav">cart</a></li>
+              <li><a href="#" class="closeNav">checkout</a></li>
+              <li><a href="#" class="closeNav">testimonial</a></li>
+              <li><a href="#" class="closeNav">404 page</a></li>
+            </ul>
+          </li>
+          <li><a href="#" class="closeNav">contact</a></li>
+        </ul>
+        <div class="nav-btn-con">
+          <di class="nav-btn-div" id="search-btn">
+            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+          </di>
+          <di class="nav-btn-div">
+            <button>
+              <i class="fa-solid fa-bag-shopping"></i>
+              <span>3</span>
+            </button>
+          </di>
+          <di class="nav-btn-div">
+            <button><i class="fa-solid fa-user"></i></button>
+          </di>
+        </div>
+      </div>
+      <div class="hamburger">
+        <div class="burger-bar"></div>
+        <div class="burger-bar"></div>
+        <div class="burger-bar"></div>
+      </div>
+      
+    </nav>
+    <div class="search-Con" id="search-Con">
+      <div class="search-con-head">
+        <h2>Search by Keyword</h2>
+        <button id="close-search"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <div class="seach-bar-con">
+        <input type="search" name="searchKey" id="searchKey" placeholder="Keywords">
+        <button><i class="fa-solid fa-magnifying-glass"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <div class="home">
+    <div class="home-details-container">
+      <h1>checkout</h1>
+      <ul>
+        <li><a href="#">home</a> /</li>
+        <li><a href="#">pages</a> /</li>
+        <li>checkout</li>
+      </ul>
+    </div>
+  </div>
+
+  <main>
+      <h2 class="checkout-header">billing details</h2>
+      <div class="checkout-wrapper">
+
+        <div class="chechout-items-one">
+          <form action="">
+            <div class="billing-user-details billing-name-wrapper">
+
+              <div class="billing-firstname-con billing-name-con">
+                <label for="checkoutFirstName">first Name *</label>
+                <input type="text" name="checkoutFirstName" id="checkoutFirstName" required>
+              </div>
+              <div class="billing-secondname-con billing-name-con">
+                <label for="checkoutLastName">last Name *</label>
+                <input type="text" name="checkoutLastName" id="checkoutLastName" required>
+              </div>
+            </div>
+            <div class="billing-user-details">
+              <label for="billingAddress">address *</label>
+              <input type="text" name="billingAddress" id="billingAddress" required>
+            </div>
+            <div class="billing-user-details">
+              <label for="billigEmail">Email *</label>
+              <input type="text" name="billigEmail" id="billigEmail" required>
+            </div>
+            <div class="billing-user-details">
+              <label for="billigCity">city *</label>
+              <input type="text" name="billigCity" id="billigCity" required>
+            </div>
+          </form>
+        </div>
+
+        <div class="checkout-item-two">
+          <h3>payment</h3>
+          <p>Accepted cards</p>
+          <img src="images/paystack.png" alt="illus">
+          <form action="">
+            <div class="card-holder-con">
+              <label for="cardHolderName">name on card</label>
+              <input type="text" name="cardHolderName" id="cardHolderName" required>
+            </div>
+            <div class="card-holder-con">
+              <label for="billigCity">card number</label>
+              <input type="number" name="billigCity" id="billigCity" required>
+            </div>
+            <div class="card-holder-con card-security-con">
+              <div class="card-deadline-details">
+                <label for="cardExp">Exp year</label>
+                <input type="number" name="cardExp" id="cardExp" required>
+              </div>
+              <div class="card-deadline-details">
+                <label for="cardCvv">CVV</label>
+                <input type="number" name="cardCvv" id="cardCvv" required>
+              </div>
+            </div>
+            <button type="submit">checkout</button>
+          </form>
+
+
+
+        </div>
+
+      </div>
+  </main>
+
+
+
+  <footer>
+    <div class="footer-header">
+      <div class="footer-header-one">
+        <h1>Hiiganic</h1>
+        <p>Fresh goods</p>
+      </div>
+      <div class="footer-header-two">
+        <form action="">
+          <input type="text" name="footerNewsLetters" id="footerSearch" placeholder="enter your email">
+          <button>subscribe now</button>
+        </form>
+      </div>
+      <div class="footer-header-three">
+        <a href="#"><span><i class="fa-brands fa-linkedin"></i></span></a>
+        <a href="#"><span><i class="fa-brands fa-x-twitter"></i></span></a>
+        <a href="#"><span><i class="fa-brands fa-facebook"></i></span></a>
+        <a href="#"><span><i class="fa-brands fa-youtube"></i></span></a>
+      </div>
+    </div>
+    
+    <div class="footer-details-container">
+      <div class="footer-details">
+        <h2>why people like us!</h2>
+        <p>customers apppreciate our oragnic food for its commtment to quality, substainability
+          health-conscious, offerings of fresh products to obtain a healthy living and ethical
+          consumption
+        </p>
+        <a href="#" class="read-more">read more</a>
+      </div>
+      <div class="footer-details">
+        <h2>shop info</h2>
+        <ul>
+          <li><a href="#">about us</a></li>
+          <li><a href="#">contact us</a></li>
+          <li><a href="#">privacy policy</a></li>
+          <li><a href="#">term & condition</a></li>
+          <li><a href="#">return policy</a></li>
+          <li><a href="#">FAQs & Help</a></li>
+        </ul>
+      </div>
+      <div class="footer-details">
+        <h2>shop info</h2>
+        <ul>
+          <li><a href="#">my account</a></li>
+          <li><a href="#">shop details</a></li>
+          <li><a href="#">shooping cart</a></li>
+          <li><a href="#">wishlist</a></li>
+          <li><a href="#">order history</a></li>
+          <li><a href="#">international orders</a></li>
+        </ul>
+      </div>
+      <div class="footer-details">
+        <h2>contact</h2>
+        <ul>
+          <li>Address: 123 lagos island, lagos Ng 10001</li>
+          <li>Email: Example@gmail.com</li>
+          <li>Phone: +234 000000000</li>
+          <li>Payment Accepted</li>
+          <li>
+            <img src="images/paystack.png" alt="illus">
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-copyright">
+      <p>&#169; <span class="company"><a href="">Hiiganic</a></span>, all right reserved</p>
+      <p>designed by <span class="creator"><a href="#">HiiDev</a></span></p>
+    </div>
+  </footer>
+
+
+
+
+
+  <script src="checkout.js"></script>
+</body>
+</html>
